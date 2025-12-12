@@ -1,0 +1,71 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "type": "SIP",
+      "fundName": "Axis Bluechip Fund",
+      "amount": 5000,
+      "status": "success",
+      "date": "2024-01-15T10:30:00Z",
+      "transactionId": "TXN001",
+      "nav": 45.67,
+      "units": 109.48
+    },
+    {
+      "id": "2",
+      "type": "Lumpsum",
+      "fundName": "HDFC Top 100 Fund",
+      "amount": 25000,
+      "status": "success",
+      "date": "2024-01-10T14:20:00Z",
+      "transactionId": "TXN002",
+      "nav": 675.30,
+      "units": 37.02
+    },
+    {
+      "id": "3",
+      "type": "SIP",
+      "fundName": "ICICI Prudential Corporate Bond Fund",
+      "amount": 2000,
+      "status": "processing",
+      "date": "2024-01-05T09:15:00Z",
+      "transactionId": "TXN003",
+      "nav": 28.20,
+      "units": 70.92
+    },
+    {
+      "id": "4",
+      "type": "Redeem",
+      "fundName": "SBI Equity Hybrid Fund",
+      "amount": 15000,
+      "status": "success",
+      "date": "2023-12-28T16:45:00Z",
+      "transactionId": "TXN004",
+      "nav": 155.80,
+      "units": 96.28
+    },
+    {
+      "id": "5",
+      "type": "SIP",
+      "fundName": "Axis Long Term Equity Fund",
+      "amount": 1000,
+      "status": "failed",
+      "date": "2023-12-20T11:30:00Z",
+      "transactionId": "TXN005",
+      "nav": 88.50,
+      "units": 11.30,
+      "failureReason": "Insufficient balance"
+    },
+    {
+      "id": "6",
+      "type": "Lumpsum",
+      "fundName": "Axis Bluechip Fund",
+      "amount": 10000,
+      "status": "success",
+      "date": "2023-12-15T13:20:00Z",
+      "transactionId": "TXN006",
+      "nav": 44.20,
+      "units": 226.24
+    }
+  ]
+}

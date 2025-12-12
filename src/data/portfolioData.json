@@ -1,0 +1,67 @@
+{
+  "portfolio": {
+    "totalInvested": 125000,
+    "currentValue": 142500,
+    "totalReturns": 17500,
+    "returnsPercentage": 14.0,
+    "xirr": 16.8,
+    "holdings": [
+      {
+        "id": "1",
+        "fundId": "1",
+        "fundName": "Axis Bluechip Fund",
+        "investedAmount": 50000,
+        "currentValue": 58500,
+        "returns": 8500,
+        "returnsPercentage": 17.0,
+        "units": 1281.25,
+        "nav": 45.67,
+        "sipAmount": 5000,
+        "sipDate": 5,
+        "sipStatus": "active"
+      },
+      {
+        "id": "2",
+        "fundId": "2",
+        "fundName": "HDFC Top 100 Fund",
+        "investedAmount": 40000,
+        "currentValue": 45200,
+        "returns": 5200,
+        "returnsPercentage": 13.0,
+        "units": 66.64,
+        "nav": 678.45,
+        "sipAmount": 3000,
+        "sipDate": 10,
+        "sipStatus": "active"
+      },
+      {
+        "id": "3",
+        "fundId": "3",
+        "fundName": "ICICI Prudential Corporate Bond Fund",
+        "investedAmount": 25000,
+        "currentValue": 26800,
+        "returns": 1800,
+        "returnsPercentage": 7.2,
+        "units": 945.67,
+        "nav": 28.34,
+        "sipAmount": 2000,
+        "sipDate": 15,
+        "sipStatus": "active"
+      },
+      {
+        "id": "4",
+        "fundId": "5",
+        "fundName": "Axis Long Term Equity Fund",
+        "investedAmount": 10000,
+        "currentValue": 12000,
+        "returns": 2000,
+        "returnsPercentage": 20.0,
+        "units": 134.15,
+        "nav": 89.45,
+        "sipAmount": 1000,
+        "sipDate": 20,
+        "sipStatus": "paused"
+      }
+    ]
+  }
+}

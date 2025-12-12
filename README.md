@@ -1,97 +1,273 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# FinanceApp - Complete Investment & Mutual Fund App
 
-# Getting Started
+A fully functional React Native CLI finance application similar to Groww, Zerodha Coin, or ET Money, built with JavaScript (no TypeScript) and modern React Native best practices.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🚀 Features
 
-## Step 1: Start Metro
+### ✅ Authentication Flow
+- **Splash Screen** - Native React Native CLI splash
+- **Onboarding** - 4 interactive slides with smooth animations
+- **Login System** - Phone number based authentication
+- **OTP Verification** - 6-digit OTP with resend functionality
+- **Persistent Login** - AsyncStorage integration
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### ✅ KYC Journey
+- **PAN Verification** - PAN number validation and formatting
+- **Aadhaar Verification** - Masked input with security features
+- **KYC Confirmation** - Review and submit flow
+- **Status Tracking** - Real-time KYC status updates
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### ✅ Investment Dashboard
+- **Portfolio Summary** - Total invested, current value, returns, XIRR
+- **Market Categories** - Equity, Debt, Hybrid, ELSS funds
+- **Quick Actions** - Invest, Start SIP, View History
+- **Holdings Overview** - Fund-wise investment breakdown
 
-```sh
-# Using npm
-npm start
+### ✅ Mutual Fund Features
+- **Fund Listing** - Search and category-wise filtering
+- **Fund Details** - Interactive charts, returns, fund information
+- **Investment Flow** - Lumpsum investment with amount selection
+- **SIP Setup** - Systematic Investment Plan configuration
 
-# OR using Yarn
-yarn start
+### ✅ Transaction Management
+- **Transaction History** - Complete transaction tracking
+- **Status Indicators** - Success, Processing, Failed states
+- **Filter Options** - By type, date, and status
+- **Real-time Updates** - Live transaction status
+
+### ✅ Profile & Settings
+- **User Profile** - Personal information management
+- **KYC Status** - Verification status tracking
+- **Settings** - App preferences and configurations
+- **Secure Logout** - Complete session management
+
+## 🛠 Tech Stack
+
+- **React Native CLI** - 0.83.0 (Latest)
+- **JavaScript Only** - No TypeScript
+- **Navigation** - @react-navigation/native v6
+- **State Management** - Redux Toolkit
+- **Storage** - AsyncStorage for persistence
+- **Charts** - Victory Native for fund performance
+- **Icons** - React Native Vector Icons
+- **UI Components** - Custom styled components
+
+## 📱 Supported Platforms
+
+- ✅ **Android** - Full compatibility
+- ✅ **iOS** - Full compatibility
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+```bash
+# Install Node.js (v18 or higher)
+node --version
+
+# Install React Native CLI
+npm install -g @react-native-community/cli
+
+# For iOS development (macOS only)
+sudo gem install cocoapods
 ```
 
-## Step 2: Build and run your app
+### Installation
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+1. **Clone and Install Dependencies**
+```bash
+cd Finance
+npm install
+```
 
-### Android
+2. **iOS Setup (macOS only)**
+```bash
+cd ios
+pod install
+cd ..
+```
 
-```sh
-# Using npm
+3. **Android Setup**
+```bash
+# Make sure Android Studio and SDK are installed
+# Set ANDROID_HOME environment variable
+```
+
+### Running the App
+
+```bash
+# Start Metro bundler
+npm start
+
+# Run on Android
 npm run android
 
-# OR using Yarn
-yarn android
+# Run on iOS (macOS only)
+npm run ios
+```
+
+## 🔐 Demo Credentials
+
+### Login Credentials
+- **Phone Numbers**: `9876543210` or `8765432109`
+- **OTP**: `123456`
+
+### KYC Demo Data
+- **PAN**: `ABCDE1234F`
+- **Aadhaar**: `123456789012`
+
+## 📁 Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   └── common/          # Button, Input, LoadingSpinner
+├── screens/             # Screen components
+│   ├── auth/           # Authentication screens
+│   ├── kyc/            # KYC verification screens
+│   ├── dashboard/      # Dashboard and portfolio
+│   ├── funds/          # Mutual fund screens
+│   ├── transactions/   # Transaction history
+│   └── profile/        # Profile and settings
+├── navigation/          # Navigation configuration
+├── store/              # Redux store and slices
+├── data/               # Dummy JSON data files
+├── services/           # API services
+├── utils/              # Utility functions
+└── constants/          # App constants and colors
+```
+
+## 📊 Data Management
+
+### Dummy Data Files
+- `dummyCredentials.json` - Login credentials
+- `mutualFunds.json` - Fund data with categories
+- `portfolioData.json` - User portfolio information
+- `transactionHistory.json` - Transaction records
+
+### API Integration Ready
+- Complete API service layer implemented
+- Easy to replace dummy data with real APIs
+- Error handling and retry mechanisms included
+
+## 🎨 UI/UX Features
+
+- **Modern Design** - Clean, professional finance app UI
+- **Responsive Layout** - Works on all screen sizes
+- **Smooth Animations** - Loading states and transitions
+- **Intuitive Navigation** - Tab-based navigation with stack screens
+- **Accessibility** - Screen reader support and proper contrast
+
+## 🔧 Customization
+
+### Colors & Theming
+```javascript
+// src/constants/colors.js
+export const COLORS = {
+  PRIMARY: '#00C853',
+  SECONDARY: '#2196F3',
+  // ... more colors
+};
+```
+
+### API Configuration
+```javascript
+// src/services/api.js
+class ApiService {
+  constructor() {
+    this.baseURL = 'YOUR_API_BASE_URL';
+  }
+}
+```
+
+## 🚀 Build for Production
+
+### Android
+```bash
+# Generate signed APK
+cd android
+./gradlew assembleRelease
+
+# Generate AAB (recommended for Play Store)
+./gradlew bundleRelease
 ```
 
 ### iOS
+```bash
+# Open in Xcode
+open ios/Finance.xcworkspace
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+# Archive and upload to App Store Connect
 ```
 
-Then, and every time you update your native dependencies, run:
+## 🧪 Testing
 
-```sh
-bundle exec pod install
+```bash
+# Run tests
+npm test
+
+# Run with coverage
+npm test -- --coverage
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## 📈 Performance Optimizations
 
-```sh
-# Using npm
+- **Code Splitting** - Loadable components for better performance
+- **Image Optimization** - Optimized assets and lazy loading
+- **Memory Management** - Proper cleanup and state management
+- **Bundle Size** - Optimized dependencies and tree shaking
+
+## 🔒 Security Features
+
+- **Data Encryption** - Sensitive data encryption
+- **Secure Storage** - AsyncStorage with encryption
+- **Input Validation** - Client-side validation for all inputs
+- **Session Management** - Secure token handling
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **Metro bundler issues**
+```bash
+npx react-native start --reset-cache
+```
+
+2. **Android build issues**
+```bash
+cd android
+./gradlew clean
+cd ..
+npm run android
+```
+
+3. **iOS build issues**
+```bash
+cd ios
+pod install --repo-update
+cd ..
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 📝 License
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+This project is licensed under the MIT License.
 
-## Step 3: Modify your app
+## 🤝 Contributing
 
-Now that you have successfully run the app, let's make changes!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 📞 Support
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+For support and questions:
+- Create an issue in the repository
+- Check the troubleshooting section
+- Review the React Native documentation
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+**Built with ❤️ using React Native CLI and modern JavaScript practices**

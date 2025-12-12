@@ -1,0 +1,160 @@
+{
+  "categories": [
+    {
+      "id": "equity",
+      "name": "Equity",
+      "description": "High growth potential with higher risk",
+      "color": "#4CAF50"
+    },
+    {
+      "id": "debt",
+      "name": "Debt",
+      "description": "Stable returns with lower risk",
+      "color": "#2196F3"
+    },
+    {
+      "id": "hybrid",
+      "name": "Hybrid",
+      "description": "Balanced mix of equity and debt",
+      "color": "#FF9800"
+    },
+    {
+      "id": "elss",
+      "name": "ELSS",
+      "description": "Tax saving funds with 3-year lock-in",
+      "color": "#9C27B0"
+    }
+  ],
+  "funds": [
+    {
+      "id": "1",
+      "name": "Axis Bluechip Fund",
+      "category": "equity",
+      "nav": 45.67,
+      "returns": {
+        "1y": 12.5,
+        "3y": 15.2,
+        "5y": 18.7
+      },
+      "riskLevel": "High",
+      "expenseRatio": 1.75,
+      "minSipAmount": 500,
+      "aum": "₹15,234 Cr",
+      "fundManager": "Shreyash Devalkar",
+      "launchDate": "2009-12-30",
+      "description": "The scheme aims to provide long-term capital appreciation by investing predominantly in equity and equity related securities of large cap companies.",
+      "chartData": [
+        { x: "Jan", y: 42.5 },
+        { x: "Feb", y: 43.2 },
+        { x: "Mar", y: 41.8 },
+        { x: "Apr", y: 44.1 },
+        { x: "May", y: 45.3 },
+        { x: "Jun", y: 45.67 }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "HDFC Top 100 Fund",
+      "category": "equity",
+      "nav": 678.45,
+      "returns": {
+        "1y": 14.2,
+        "3y": 16.8,
+        "5y": 19.5
+      },
+      "riskLevel": "High",
+      "expenseRatio": 1.85,
+      "minSipAmount": 500,
+      "aum": "₹25,678 Cr",
+      "fundManager": "Prashant Jain",
+      "launchDate": "1996-09-30",
+      "description": "The investment objective of the scheme is to provide long term capital appreciation by investing in equity and equity related securities of top 100 companies.",
+      "chartData": [
+        { x: "Jan", y: 650.2 },
+        { x: "Feb", y: 665.8 },
+        { x: "Mar", y: 672.1 },
+        { x: "Apr", y: 675.3 },
+        { x: "May", y: 680.2 },
+        { x: "Jun", y: 678.45 }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "ICICI Prudential Corporate Bond Fund",
+      "category": "debt",
+      "nav": 28.34,
+      "returns": {
+        "1y": 7.8,
+        "3y": 8.2,
+        "5y": 8.9
+      },
+      "riskLevel": "Low",
+      "expenseRatio": 0.95,
+      "minSipAmount": 1000,
+      "aum": "₹8,456 Cr",
+      "fundManager": "Manish Banthia",
+      "launchDate": "2009-05-01",
+      "description": "The investment objective is to generate income and capital appreciation by investing in corporate bonds and government securities.",
+      "chartData": [
+        { x: "Jan", y: 27.8 },
+        { x: "Feb", y: 28.0 },
+        { x: "Mar", y: 28.1 },
+        { x: "Apr", y: 28.2 },
+        { x: "May", y: 28.3 },
+        { x: "Jun", y: 28.34 }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "SBI Equity Hybrid Fund",
+      "category": "hybrid",
+      "nav": 156.78,
+      "returns": {
+        "1y": 10.5,
+        "3y": 12.8,
+        "5y": 14.2
+      },
+      "riskLevel": "Moderate",
+      "expenseRatio": 1.65,
+      "minSipAmount": 500,
+      "aum": "₹12,345 Cr",
+      "fundManager": "R. Srinivasan",
+      "launchDate": "2004-11-18",
+      "description": "The scheme seeks to generate long-term capital appreciation and current income through a judicious mix of equity and debt securities.",
+      "chartData": [
+        { x: "Jan", y: 152.3 },
+        { x: "Feb", y: 154.1 },
+        { x: "Mar", y: 155.8 },
+        { x: "Apr", y: 156.2 },
+        { x: "May", y: 157.1 },
+        { x: "Jun", y: 156.78 }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Axis Long Term Equity Fund",
+      "category": "elss",
+      "nav": 89.45,
+      "returns": {
+        "1y": 16.8,
+        "3y": 18.5,
+        "5y": 20.2
+      },
+      "riskLevel": "High",
+      "expenseRatio": 1.95,
+      "minSipAmount": 500,
+      "aum": "₹18,567 Cr",
+      "fundManager": "Jinesh Gopani",
+      "launchDate": "2009-12-29",
+      "description": "The scheme aims to provide long-term capital appreciation and tax benefits under Section 80C by investing in equity and equity related securities.",
+      "chartData": [
+        { x: "Jan", y: 85.2 },
+        { x: "Feb", y: 87.1 },
+        { x: "Mar", y: 88.5 },
+        { x: "Apr", y: 89.2 },
+        { x: "May", y: 90.1 },
+        { x: "Jun", y: 89.45 }
+      ]
+    }
+  ]
+}
